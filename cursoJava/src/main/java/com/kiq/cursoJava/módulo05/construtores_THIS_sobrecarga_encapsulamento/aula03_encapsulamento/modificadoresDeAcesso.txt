@@ -1,0 +1,24 @@
+Modificadores de Acesso em Java:
+1. public:
+   - Acesso permitido de qualquer classe, em qualquer pacote.
+   - Exemplo:
+   
+     public class MinhaClasse {
+         public int meuAtributoPublico;
+     }
+     
+2. private: 
+   - Acesso permitido apenas dentro da própria classe.
+   - Exemplo:
+   
+     public class MinhaClasse {
+         private int meuAtributoPrivado;
+     }
+     
+3. protected:
+   - Acesso permitido dentro do mesmo pacote e por subclasses (mesmo em pacotes diferentes).
+   - Exemplo:
+   
+     public class MinhaClasse {
+         protected int meuAtributoProtegido;
+     }
