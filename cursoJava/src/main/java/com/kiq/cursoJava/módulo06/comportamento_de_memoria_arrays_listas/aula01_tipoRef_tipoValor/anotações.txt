@@ -1,0 +1,28 @@
+# Classes são tipos referência
+- Variáveis cujo tipo classe armazenam referências (endereços de memória) para os objetos.
+- Quando uma variável de classe é atribuída a outra, ambas apontam para o mesmo objeto
+
+Exemplo:
+  ClasseA obj1 = new ClasseA();
+  ClasseA obj2 = obj1; // obj2 referencia o mesmo objeto que obj1
+  obj2.alterarValor(); // altera o objeto referenciado por ambas as variáveis
+  
+* Ainda falando de tipos referência, temos o valor null, aceito por variáveis de tipos referência:
+- null indica que a variável não referência nenhum objeto
+- Acessar membros de uma variável null resulta em NullReferenceException
+
+# Tipos primitivos são tipos valor
+- Variáveis de tipos primitivos armazenam diretamente os valores
+- Quando uma variável de tipo primitivo é atribuída a outra, o valor é copiado para a nova variável, não a referência
+
+Exemplo:
+  int a = 5;
+  int b = a; // b recebe uma cópia do valor de a
+  b = 10; // altera apenas b, a permanece 5
+  
+* Tipos valor não aceitam null:
+- Variáveis de tipos valor sempre contêm um valor válido
+- Atribuir null a uma variável de tipo valor resulta em erro de compilação
+
+** Tipos primitivos comuns em Java:
+- boolean, char, byte, short, int, long, float, double

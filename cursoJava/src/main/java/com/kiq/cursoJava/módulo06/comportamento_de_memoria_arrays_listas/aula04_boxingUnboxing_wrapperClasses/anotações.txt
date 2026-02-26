@@ -1,0 +1,31 @@
+# Boxing 
+- É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível.
+- Exemplo: Converter um `int` para um `Integer` em Java.
+- Exemplo:
+   
+    int num = 10;
+    Integer boxedNum = Integer.valueOf(num); // Boxing
+   
+# Unboxing
+- É o processo inverso do boxing, onde um objeto tipo referência é convertido de volta para um tipo valor.
+- Exemplo: Converter um `Integer` de volta para um `int` em Java.
+- Exemplo:
+   
+    Integer boxedNum = Integer.valueOf(10);
+    int num = boxedNum.intValue(); // Unboxing
+
+# Wrapper Classes
+- São classes que encapsulam tipos primitivos em objetos.
+- São classes equivalentes para cada tipo primitivo.
+- Aceita valores nulos, ao contrário dos tipos primitivos.
+- Exemplos em Java:
+  - `Integer` para `int`
+  - `Double` para `double`
+  - `Character` para `char`
+  - `Boolean` para `boolean`
+- Permitem que tipos primitivos sejam usados em contextos que exigem objetos, como coleções (e.g., `ArrayList<Integer>`).
+- Exemplo:
+   
+    ArrayList<Integer> list = new ArrayList<>();
+    list.add(10); // Autoboxing ocorre aqui
+    int num = list.get(0); // Autounboxing ocorre aqui

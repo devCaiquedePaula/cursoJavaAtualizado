@@ -1,0 +1,24 @@
+# Garbage Collector e Escopo Local
+
+- O Garbage Collector (GC) é um mecanismo de gerenciamento automático de memória em linguagens como Java e Python.
+- O GC monitora objetos na memória (HEAP) e libera automaticamente a memória ocupada por objetos que não são mais acessíveis 
+- ou referenciados pelo programa.
+- Isso ajuda a prevenir vazamentos de memória e otimiza o uso da memória.
+
+# Escopo Local
+- O escopo local refere-se à área do código onde uma variável é acessível.
+- Variáveis declaradas dentro de um método ou bloco só podem ser acessadas dentro desse método, ou bloco.
+- Quando a execução sai do escopo local, as variáveis locais são destruídas e a memória que ocupavam pode ser liberada pelo Garbage Collector.
+- Isso significa que objetos criados dentro de um método podem ser coletados pelo GC se não houver mais referências a eles fora do método.
+- O escopo local ajuda a controlar a vida útil das variáveis e objetos, facilitando o gerenciamento de memória.
+
+- Exemplo:
+
+  void meuMetodo() {
+      MinhaClasse obj = new MinhaClasse(); // obj é uma variável local
+      // uso de obj
+  } // ao sair do método, obj sai do escopo e pode ser coletado pelo GC se não houver outras referências a ele
+  
+** Importante:
+- Embora o Garbage Collector ajude a gerenciar a memória, é importante escrever código eficiente e evitar criar referências desnecessárias a objetos.
+- Isso garante que o GC possa liberar memória de forma eficaz, melhorando o desempenho do aplicativo.

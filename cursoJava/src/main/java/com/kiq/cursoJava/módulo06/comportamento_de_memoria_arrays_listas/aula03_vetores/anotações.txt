@@ -1,0 +1,18 @@
+# Vetores
+
+- Em programação, "vetor" é o nome dado a arranjos unidimensionais, ou seja, listas lineares de elementos.
+
+• Arranjo (array) é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em posições contíguas na memória.
+    • Homogeneidade: Todos os elementos do arranjo são do mesmo tipo de dado (por exemplo, todos inteiros, todos caracteres, etc.).
+    • Ordenada: Cada elemento no arranjo tem um índice (ou posição) que determina sua ordem dentro da coleção.
+    • Acesso Direto: Os elementos podem ser acessados diretamente usando seus índices, o que permite operações rápidas de leitura e escrita.
+    • Tamanho Fixo: O tamanho do arranjo é definido no momento de sua criação e não pode ser alterado posteriormente
+    
+- Exemplo de declaração e inicialização de um vetor em Java:
+
+int[] numeros = new int[5];
+numeros[0] = 10; 
+numeros[1] = 20; 
+numeros[2] = 30; 
+numeros[3] = 40; 
+numeros[4] = 50; 

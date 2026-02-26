@@ -1,0 +1,47 @@
+# Conceito de Listas em Java
+- As listas são estruturas de dados que armazenam uma coleção de elementos. Diferentemente dos arrays, 
+as listas podem crescer e diminuir dinamicamente. Em Java, a interface List faz parte do ‘framework’ de coleções 
+e é implementada por várias classes, como ArrayList, LinkedList, entre outras. São homogêneas, ou seja, armazenam elementos do mesmo tipo.
+São ordenadas, permitindo acesso sequencial aos elementos. Iniciam com índice zero.
+
+- As listas permitem a inserção, remoção e acesso aos elementos de forma eficiente. Elas são amplamente utilizadas
+em aplicações Java devido à sua flexibilidade e facilidade de uso.
+
+- A interface List oferece diversos métodos úteis, como add(), remove(), get(), size(), entre outros, que facilitam
+a manipulação dos elementos armazenados na lista.
+
+- As listas podem armazenar elementos de qualquer tipo de objeto, incluindo tipos primitivos através do uso de 
+classes wrapper, como Integer, Double, etc.
+
+## Exemplo de criação e uso de uma lista em Java:
+
+import java.util.ArrayList;
+import java.util.List; 
+
+public class ExemploLista {
+    public static void main(String[] args) {
+        // Criação de uma lista de Strings
+        List<String> listaDeNomes = new ArrayList<>();
+
+        // Adicionando elementos à lista
+        listaDeNomes.add("Alice");
+        listaDeNomes.add("Bob");
+        listaDeNomes.add("Charlie");
+
+        // Acessando elementos da lista
+        System.out.println("Primeiro nome: " + listaDeNomes.get(0));
+
+        // Removendo um elemento da lista
+        listaDeNomes.remove("Bob");
+
+        // Tamanho da lista
+        System.out.println("Tamanho da lista: " + listaDeNomes.size());
+
+        // Iterando sobre os elementos da lista
+        for (String nome : listaDeNomes) {
+            System.out.println(nome);
+        }
+    }
+}
+- Neste exemplo, criamos uma lista de nomes, adicionamos alguns nomes, 
+acessamos o primeiro nome, removemos um nome e iteramos sobre os elementos da lista para exibi-los no console.
