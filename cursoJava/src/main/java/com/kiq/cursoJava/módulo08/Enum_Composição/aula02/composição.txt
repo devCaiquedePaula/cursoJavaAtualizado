@@ -1,0 +1,16 @@
+Composição:
+- A composição é um tipo de associação onde um objeto é parte de outro objeto, e a vida do objeto parte depende da vida do objeto todo. 
+- Em outras palavras, se o objeto todo for destruído, os objetos partes também serão destruídos.
+- É um tipo de associação que permite que um objeto contenha outro
+- Relação "tem um" (has-a)
+- Exemplo: Um carro tem um motor. O motor é parte do carro, e se o carro for destruído, o motor também será destruído.
+- Relação "tem varios" (has-many)
+- Exemplo: Uma escola tem vários alunos. Os alunos são parte da escola, e se a escola for destruída, os alunos também serão destruídos.
+- Relação "possui" (owns)
+- Exemplo: Uma empresa possui vários departamentos. Os departamentos são parte da empresa, e se a empresa for destruída, os departamentos também serão destruídos.
+- A composição é uma forma de modelar a relação entre objetos de forma mais forte do que a agregação, onde os objetos partes podem existir independentemente do objeto todo. 
+- Vantagens
+    - Organização: divisão de responsabilidades entre objetos.
+    - Coesão
+    - Flexibilidade
+    - Reuso
